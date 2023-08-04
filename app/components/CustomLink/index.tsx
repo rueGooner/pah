@@ -11,7 +11,7 @@ export const CustomLink: React.FC<CustomLinkProps> = ({ href, ...props }) => {
     return (
       <button
         {...props}
-        className="text-white absolute right-2.5 bottom-2.5 bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 disabled:opacity-50 cursor-not-allowed"
+        className="text-white relative md:absolute md:right-2.5 bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 my-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 disabled:opacity-50 cursor-not-allowed"
         disabled
       >
         Empty Location
@@ -23,7 +23,7 @@ export const CustomLink: React.FC<CustomLinkProps> = ({ href, ...props }) => {
     <Link
       href={`/location/${href}`}
       {...props}
-      className="text-white absolute right-2.5 bottom-2.5 bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+      className="text-white relative md:absolute md:right-2.5 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 my-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
     >
       <button>Search</button>
     </Link>
