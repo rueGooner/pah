@@ -8,7 +8,7 @@ export const SearchBar = () => {
   const [location, setLocation] = React.useState<string>('');
 
   return (
-    <div data-testid="form-group" className="w-full order-2 md:order-1">
+    <div data-testid="form-group" className="w-full md:w-2/3 order-2 md:order-1">
       <label
         htmlFor="weather-search-input"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -38,7 +38,7 @@ export const SearchBar = () => {
             data-testid="weather-search-input"
             type="search"
             id="weather-search-input"
-            className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-slate-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Type in a location..."
             onChange={(e) => setLocation(e.target.value)}
             required
