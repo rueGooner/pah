@@ -15,9 +15,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   if (data.error) redirect('/error');
 
-  console.log(data);
-  
-
   return (
     <div className="flex min-h-screen flex-col items-center p-10 bg-slate-400 justify-center">
       <div className="rounded shadow-md shadow-slate-900 bg-gray-900 text-gray-200 p-5 m-5 flex items-center justify-between w-full md:w-2/3 relative">
